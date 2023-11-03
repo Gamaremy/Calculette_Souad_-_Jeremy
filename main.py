@@ -16,6 +16,8 @@ def soustr (a,b):
 
 def sum(a,b):
 	res = a+b
+	return res
+	
 
 def multiply(a,b):
 	res=a*b	
@@ -23,3 +25,5 @@ def multiply(a,b):
 
 if __name__ == '__main__':
 	x = 0
+jefaisdesessai=(sum(5,2))
+print('la somme vaut : ',jefaisdesessai)
