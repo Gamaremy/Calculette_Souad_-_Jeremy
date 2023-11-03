@@ -1,3 +1,4 @@
+# ludi est passé par là
 # définir chacun votre fonction
 # Je reteste 
 class Error(Exception):
