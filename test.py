@@ -1,24 +1,10 @@
-main.py
-# définir chacun votre fonction
-class Error(Exception):
-	pass
+import pytest
+from main import divide, Error # nom du fichier
 
-def divide(a,b):
-	if b == 0:
-		raise Error("Pas de division par zéro")
-	res = a / b
-	return res
+# test unitaire
+def test_div():
+	assert divide(1,2) == 0.5
 
-def soustr (a,b):
-	res = a - b
-	return res
-
-def sum(a,b):
-	res = a+b
-
-def multiply(a,b):
-	res=a*b	
-	return res
-
-if __name__ == '__main__':
-	x = 0
+def test_raise():
+	with pytest.raises(Error):
+		divide(1,0)
